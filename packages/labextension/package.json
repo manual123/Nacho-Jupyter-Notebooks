@@ -1,0 +1,46 @@
+{
+  "name": "jupyterlab-jupytext",
+  "version": "1.2.1",
+  "description": "A JupyterLab extension for Jupytext",
+  "keywords": [
+    "jupyter",
+    "jupytext",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/mwouts/jupytext/tree/master/packages/labextension",
+  "bugs": {
+    "url": "https://github.com/mwouts/jupytext/issues"
+  },
+  "license": "MIT",
+  "author": "Marc Wouts",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mwouts/jupytext.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^2.0",
+    "@jupyterlab/apputils": "^2.0",
+    "@jupyterlab/notebook": "^2.0",
+    "@jupyterlab/nbformat": "^2.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0",
+    "typescript": "~3.7.3"
+  },
+  "jupyterlab": {
+    "extension": true
+  }
+}

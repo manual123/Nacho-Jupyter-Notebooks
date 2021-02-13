@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-10-10 Wed 16:40 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Harper Eric S CTR USAF AFMC AFRL/RXAP" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org3ee5936">1. Tutorials:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tutorial">tutorial</span></span></a>
+<ul>
+<li><a href="#org8a0b852">1.1. MNIST Handwritten Digit:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mnist">mnist</span></span></a>
+<ul>
+<li><a href="#org98b82a7">1.1.1. Overview&#xa0;&#xa0;&#xa0;<span class="tag"><span class="information">information</span></span></a></li>
+<li><a href="#org83096e8">1.1.2. SVM Digit Classification&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notebook">notebook</span>&#xa0;<span class="svm">svm</span></span></a></li>
+<li><a href="#org0566d90">1.1.3. Keras ANN&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notebook">notebook</span>&#xa0;<span class="information">information</span>&#xa0;<span class="ann">ann</span></span></a></li>
+<li><a href="#org50492d5">1.1.4. Multinomail logist +L1&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notebook">notebook</span>&#xa0;<span class="regression">regression</span></span></a></li>
+<li><a href="#orgc3ac42a">1.1.5. In-depth ANN/SVM&#xa0;&#xa0;&#xa0;<span class="tag"><span class="information">information</span></span></a></li>
+<li><a href="#orgf917bff">1.1.6. Simple with layer parameter adjusting&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tutorial">tutorial</span></span></a></li>
+</ul>
+</li>
+<li><a href="#org2676e51">1.2. A few more examples using different datasets and methods:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="data">data</span></span></a>
+<ul>
+<li><a href="#org5c72b1b">1.2.1. Keras Iris ANN</a></li>
+<li><a href="#orgeb58635">1.2.2. Pima Indians ANN&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ANN">ANN</span></span></a></li>
+<li><a href="#org96cb765">1.2.3. Taxi Example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notebook">notebook</span></span></a></li>
+<li><a href="#orgff50a56">1.2.4. Poverty Prediction</a></li>
+<li><a href="#orgfc069a1">1.2.5. Energy Star Rating Prediction</a></li>
+<li><a href="#org1903947">1.2.6. Boston Housing Example&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notebook">notebook</span></span></a></li>
+<li><a href="#orge0e2baa">1.2.7. SKlearn tutorials</a></li>
+<li><a href="#org13f4234">1.2.8. Eigenfaces/SVM Sklearn</a></li>
+<li><a href="#org196cb01">1.2.9. Autoencoder&#xa0;&#xa0;&#xa0;<span class="tag"><span class="information">information</span></span></a></li>
+<li><a href="#org2defe75">1.2.10. Audio (for Matt):&#xa0;&#xa0;&#xa0;<span class="tag"><span class="information">information</span></span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgbdcb13a">2. Reference:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="information">information</span></span></a>
+<ul>
+<li><a href="#org4adc0a7">2.1. Artificial Neural Networks</a>
+<ul>
+<li><a href="#org51f6185">2.1.1. Brief Overview</a></li>
+<li><a href="#orge3d03bc">2.1.2. Deeper Overview</a></li>
+<li><a href="#org4b3910c">2.1.3. Gentle Introduction</a></li>
+<li><a href="#org5703e93">2.1.4. Activation Functions</a></li>
+<li><a href="#org1d7dd73">2.1.5. Network Cheat Sheets</a></li>
+<li><a href="#org405ccbb">2.1.6. Loss Functions</a></li>
+<li><a href="#orgcf2cbea">2.1.7. Convolutional Neural Nets:</a></li>
+<li><a href="#orgc227919">2.1.8. Layer Visualization:</a></li>
+<li><a href="#org41f3ce8">2.1.9. ResNet50</a></li>
+<li><a href="#orgb963b6b">2.1.10. Recurrent Neural Nets (RNNs)</a></li>
+</ul>
+</li>
+<li><a href="#org776a6d3">2.2. Support Vector Machines</a>
+<ul>
+<li><a href="#org8842993">2.2.1. Wikipedia</a></li>
+<li><a href="#orgc9b365f">2.2.2. SVM Theory</a></li>
+<li><a href="#org956b476">2.2.3. SVM Theory 2</a></li>
+<li><a href="#orga7b53fb">2.2.4. Regression</a></li>
+<li><a href="#org4aa4cc7">2.2.5. More theory</a></li>
+</ul>
+</li>
+<li><a href="#org359d294">2.3. Clustering Comparison</a></li>
+<li><a href="#orga13a521">2.4. Generative models</a></li>
+<li><a href="#org934c6ed">2.5. Multilabel classification</a>
+<ul>
+<li><a href="#org958ee81">2.5.1. Simple answer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgc26a5ac">3. Other Interesting Data Sets:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="data">data</span></span></a>
+<ul>
+<li><a href="#org8ffbf16">3.1. Group Competition/Project: PUBG</a>
+<ul>
+<li><a href="#org7112fec">3.1.1. I propose using this dataset/competition as a group exercise/competition to increase understanding of ML</a></li>
+</ul>
+</li>
+<li><a href="#org3830c40">3.2. Wine Quality&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tutorial">tutorial</span></span></a>
+<ul>
+<li><a href="#orge3f0e74">3.2.1. Tutorial</a></li>
+</ul>
+</li>
+<li><a href="#orgd226674">3.3. Pima Indians Diabetes</a></li>
+<li><a href="#orgbb165f5">3.4. NCAA Basketball Super Dataset</a></li>
+<li><a href="#orgea44905">3.5. USA Names</a></li>
+<li><a href="#org32f49f7">3.6. Fashion MNIST</a></li>
+<li><a href="#org482330b">3.7. 2016 MLB Data</a></li>
+<li><a href="#orgd316ed3">3.8. Power Lifting</a></li>
+<li><a href="#org68d0864">3.9. Brewer's Friend Recipes</a></li>
+<li><a href="#org5f9e2d0">3.10. EPL 2006/7 - 2017/8</a></li>
+<li><a href="#orgcd77d6c">3.11. EPL 1993-2018</a>
+<ul>
+<li><a href="#org93e67f1">3.11.1. The idea behind this would be to take as much input "stats" as possible in an attempt to predict expected outcome (perhaps as a percentage) so that, for a given week, you could put in such stats for a matchup and predict the winner, perhaps with an expected win probability</a></li>
+</ul>
+</li>
+<li><a href="#orgb9bcedb">3.12. Reddit Memes</a></li>
+<li><a href="#orgc3f9401">3.13. Fraiser Dialogs</a></li>
+<li><a href="#org0df8515">3.14. Models:</a>
+<ul>
+<li><a href="#org63c45c5">3.14.1. ResNetV2</a></li>
+<li><a href="#org3ebfb66">3.14.2. ResNet50</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3ee5936" class="outline-2">
+<h2 id="org3ee5936"><span class="section-number-2">1</span> Tutorials:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tutorial">tutorial</span></span></h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Here are a few examples and tutorials to get started/refresh your skills, starting with the "Hello, World!" of ML: the MNIST Handwritten digits:
+</p>
+</div>
+<div id="outline-container-org8a0b852" class="outline-3">
+<h3 id="org8a0b852"><span class="section-number-3">1.1</span> MNIST Handwritten Digit:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="mnist">mnist</span></span></h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org98b82a7" class="outline-4">
+<h4 id="org98b82a7"><span class="section-number-4">1.1.1</span> <a href="https://github.com/ksopyla/svm_mnist_digit_classification">Overview</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="information">information</span></span></h4>
+</div>
+<div id="outline-container-org83096e8" class="outline-4">
+<h4 id="org83096e8"><span class="section-number-4">1.1.2</span> <a href="http://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html">SVM Digit Classification</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notebook">notebook</span>&#xa0;<span class="svm">svm</span></span></h4>
+</div>
+<div id="outline-container-org0566d90" class="outline-4">
+<h4 id="org0566d90"><span class="section-number-4">1.1.3</span> <a href="https://elitedatascience.com/keras-tutorial-deep-learning-in-python">Keras ANN</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notebook">notebook</span>&#xa0;<span class="information">information</span>&#xa0;<span class="ann">ann</span></span></h4>
+</div>
+<div id="outline-container-org50492d5" class="outline-4">
+<h4 id="org50492d5"><span class="section-number-4">1.1.4</span> <a href="http://scikit-learn.org/stable/auto_examples/linear_model/plot_sparse_logistic_regression_mnist.html#sphx-glr-auto-examples-linear-model-plot-sparse-logistic-regression-mnist-py">Multinomail logist +L1</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notebook">notebook</span>&#xa0;<span class="regression">regression</span></span></h4>
+</div>
+<div id="outline-container-orgc3ac42a" class="outline-4">
+<h4 id="orgc3ac42a"><span class="section-number-4">1.1.5</span> <a href="http://neuralnetworksanddeeplearning.com/chap1.html">In-depth ANN/SVM</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="information">information</span></span></h4>
+</div>
+<div id="outline-container-orgf917bff" class="outline-4">
+<h4 id="orgf917bff"><span class="section-number-4">1.1.6</span> <a href="https://medium.freecodecamp.org/how-to-classify-mnist-digits-with-different-neural-network-architectures-39c75a0f03e3">Simple with layer parameter adjusting</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tutorial">tutorial</span></span></h4>
+</div>
+</div>
+<div id="outline-container-org2676e51" class="outline-3">
+<h3 id="org2676e51"><span class="section-number-3">1.2</span> A few more examples using different datasets and methods:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="data">data</span></span></h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-org5c72b1b" class="outline-4">
+<h4 id="org5c72b1b"><span class="section-number-4">1.2.1</span> <a href="https://machinelearningmastery.com/multi-class-classification-tutorial-keras-deep-learning-library/">Keras Iris ANN</a></h4>
+</div>
+<div id="outline-container-orgeb58635" class="outline-4">
+<h4 id="orgeb58635"><span class="section-number-4">1.2.2</span> <a href="https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/">Pima Indians ANN</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="ANN">ANN</span></span></h4>
+</div>
+<div id="outline-container-org96cb765" class="outline-4">
+<h4 id="org96cb765"><span class="section-number-4">1.2.3</span> <a href="https://towardsdatascience.com/another-machine-learning-walk-through-and-a-challenge-8fae1e187a64">Taxi Example</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notebook">notebook</span></span></h4>
+<div class="outline-text-4" id="text-1-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgb92e518"></a><a href="https://github.com/WillKoehrsen/taxi-fare/blob/master/A%20Walkthrough%20and%20a%20Challenge.ipynb">link to notebook walkthrough</a><br /></li>
+</ol>
+</div>
+<div id="outline-container-orgff50a56" class="outline-4">
+<h4 id="orgff50a56"><span class="section-number-4">1.2.4</span> <a href="https://towardsdatascience.com/a-data-science-for-good-machine-learning-project-walk-through-in-python-part-one-1977dd701dbc">Poverty Prediction</a></h4>
+</div>
+<div id="outline-container-orgfc069a1" class="outline-4">
+<h4 id="orgfc069a1"><span class="section-number-4">1.2.5</span> <a href="https://towardsdatascience.com/a-complete-machine-learning-walk-through-in-python-part-one-c62152f39420">Energy Star Rating Prediction</a></h4>
+</div>
+<div id="outline-container-org1903947" class="outline-4">
+<h4 id="org1903947"><span class="section-number-4">1.2.6</span> <a href="https://machinelearningmastery.com/regression-tutorial-keras-deep-learning-library-python/">Boston Housing Example</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="notebook">notebook</span></span></h4>
+<div class="outline-text-4" id="text-1-2-6">
+</div>
+<ol class="org-ol">
+<li><a id="org709d155"></a><a href="https://www.kaggle.com/zoupet/neural-network-model-for-house-prices-tensorflow">Kaggle Data Link</a><br /></li>
+<li><a id="org4b47539"></a><a href="http://www.neural.cz/dataset-exploration-boston-house-pricing.html">Walkthrough</a><br /></li>
+</ol>
+</div>
+<div id="outline-container-orge0e2baa" class="outline-4">
+<h4 id="orge0e2baa"><span class="section-number-4">1.2.7</span> <a href="http://scikit-learn.org/stable/tutorial/index.html">SKlearn tutorials</a></h4>
+</div>
+<div id="outline-container-org13f4234" class="outline-4">
+<h4 id="org13f4234"><span class="section-number-4">1.2.8</span> <a href="http://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py">Eigenfaces/SVM Sklearn</a></h4>
+</div>
+<div id="outline-container-org196cb01" class="outline-4">
+<h4 id="org196cb01"><span class="section-number-4">1.2.9</span> <a href="https://blog.keras.io/building-autoencoders-in-keras.html">Autoencoder</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="information">information</span></span></h4>
+</div>
+<div id="outline-container-org2defe75" class="outline-4">
+<h4 id="org2defe75"><span class="section-number-4">1.2.10</span> Audio (for Matt):&#xa0;&#xa0;&#xa0;<span class="tag"><span class="information">information</span></span></h4>
+<div class="outline-text-4" id="text-1-2-10">
+</div>
+<ol class="org-ol">
+<li><a id="org8b017bd"></a><a href="https://blog.manash.me/building-a-dead-simple-word-recognition-engine-using-convnet-in-keras-25e72c19c12b">Speech Recognition with Keras ConvNet</a><br /></li>
+<li><a id="orgd4b955e"></a><a href="https://medium.com/@franky07724_57962/what-i-learned-from-the-godfather-f2398c136372">Music Generation</a><br /></li>
+<li><a id="org7a7c75e"></a><a href="https://github.com/drscotthawley/audio-classifier-keras-cnn">Audio Classifier</a><br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgbdcb13a" class="outline-2">
+<h2 id="orgbdcb13a"><span class="section-number-2">2</span> Reference:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="information">information</span></span></h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org4adc0a7" class="outline-3">
+<h3 id="org4adc0a7"><span class="section-number-3">2.1</span> Artificial Neural Networks</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org51f6185" class="outline-4">
+<h4 id="org51f6185"><span class="section-number-4">2.1.1</span> <a href="https://towardsdatascience.com/a-gentle-introduction-to-neural-networks-series-part-1-2b90b87795bc">Brief Overview</a></h4>
+</div>
+<div id="outline-container-orge3d03bc" class="outline-4">
+<h4 id="orge3d03bc"><span class="section-number-4">2.1.2</span> <a href="https://skymind.ai/wiki/neural-network">Deeper Overview</a></h4>
+</div>
+<div id="outline-container-org4b3910c" class="outline-4">
+<h4 id="org4b3910c"><span class="section-number-4">2.1.3</span> <a href="https://towardsdatascience.com/a-gentle-introduction-to-neural-networks-series-part-1-2b90b87795bc">Gentle Introduction</a></h4>
+</div>
+<div id="outline-container-org5703e93" class="outline-4">
+<h4 id="org5703e93"><span class="section-number-4">2.1.4</span> <a href="https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0">Activation Functions</a></h4>
+</div>
+<div id="outline-container-org1d7dd73" class="outline-4">
+<h4 id="org1d7dd73"><span class="section-number-4">2.1.5</span> <a href="https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463">Network Cheat Sheets</a></h4>
+</div>
+<div id="outline-container-org405ccbb" class="outline-4">
+<h4 id="org405ccbb"><span class="section-number-4">2.1.6</span> <a href="https://isaacchanghau.github.io/post/loss_functions/">Loss Functions</a></h4>
+</div>
+<div id="outline-container-orgcf2cbea" class="outline-4">
+<h4 id="orgcf2cbea"><span class="section-number-4">2.1.7</span> Convolutional Neural Nets:</h4>
+<div class="outline-text-4" id="text-2-1-7">
+</div>
+<ol class="org-ol">
+<li><a id="orgcd219e1"></a><a href="https://jacobgil.github.io/deeplearning/filter-visualizations">Visualizing CNN filters with keras</a><br /></li>
+<li><a id="org9e58495"></a><a href="https://blog.keras.io/how-convolutional-neural-networks-see-the-world.html">Keras walkthrough</a><br /></li>
+<li><a id="org851f60a"></a><a href="https://ai.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html">Google Deep Dream</a><br /></li>
+<li><a id="orga000219"></a><a href="https://github.com/jacobgil/keras-filter-visualization">Github Keras Visualization</a><br /></li>
+</ol>
+</div>
+<div id="outline-container-orgc227919" class="outline-4">
+<h4 id="orgc227919"><span class="section-number-4">2.1.8</span> Layer Visualization:</h4>
+<div class="outline-text-4" id="text-2-1-8">
+</div>
+<ol class="org-ol">
+<li><a id="orgd1dbca5"></a><a href="https://github.com/raghakot/keras-vis">keras-vis</a><br />
+<ol class="org-ol">
+<li><a id="orgb475a6e"></a><a href="https://raghakot.github.io/keras-vis/#getting-started">Documentation</a><br /></li>
+</ol>
+</li>
+<li><a id="orgb91ad35"></a>GET LINK FROM EXAMPLE<br /></li>
+</ol>
+</div>
+<div id="outline-container-org41f3ce8" class="outline-4">
+<h4 id="org41f3ce8"><span class="section-number-4">2.1.9</span> <a href="https://www.kaggle.com/keras/resnet50/discussion">ResNet50</a></h4>
+</div>
+<div id="outline-container-orgb963b6b" class="outline-4">
+<h4 id="orgb963b6b"><span class="section-number-4">2.1.10</span> Recurrent Neural Nets (RNNs)</h4>
+<div class="outline-text-4" id="text-2-1-10">
+</div>
+<ol class="org-ol">
+<li><a id="org586ae18"></a><a href="https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html">Ten minute intro</a><br />
+<ol class="org-ol">
+<li><a id="org1a1a83c"></a><a href="https://github.com/keras-team/keras/blob/master/examples/addition_rnn.py">Code</a><br /></li>
+</ol>
+</li>
+<li><a id="orga18ca26"></a><a href="https://keras.io/layers/recurrent/">Keras Documentation</a><br /></li>
+<li><a id="org19a360b"></a><a href="http://adventuresinmachinelearning.com/recurrent-neural-networks-lstm-tutorial-tensorflow/">Tutorial</a><br />
+<ol class="org-ol">
+<li><a id="org3caedc2"></a><a href="http://adventuresinmachinelearning.com/keras-lstm-tutorial/">Keras Version</a><br /></li>
+</ol>
+</li>
+<li><a id="orgfc449c6"></a><a href="https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/">Another example</a><br /></li>
+<li><a id="org5cec238"></a><a href="https://www.kaggle.com/nvhbk16k53/simple-rnn-with-keras">Simple Keras RNN</a><br /></li>
+<li><a id="org8154666"></a><a href="https://towardsdatascience.com/understanding-lstm-and-its-quick-implementation-in-keras-for-sentiment-analysis-af410fd85b47">Quick Keras Implementation</a><br /></li>
+<li><a id="org60c0a60"></a><a href="https://github.com/martin-gorner/tensorflow-rnn-shakespeare">Shakespeare</a><br /></li>
+<li><a id="org7522760"></a><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">Overview article</a><br /></li>
+<li><a id="org3b3de89"></a><a href="https://docs.google.com/presentation/d/e/2PACX-1vRouwj_3cYsmLrNNI3Uq5gv5-hYp_QFdeoan2GlxKgIZRSejozruAbVV0IMXBoPsINB7Jw92vJo2EAM/pub#slide=id.p">Slides</a><br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org776a6d3" class="outline-3">
+<h3 id="org776a6d3"><span class="section-number-3">2.2</span> Support Vector Machines</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org8842993" class="outline-4">
+<h4 id="org8842993"><span class="section-number-4">2.2.1</span> <a href="https://en.wikipedia.org/wiki/Support_vector_machine">Wikipedia</a></h4>
+</div>
+<div id="outline-container-orgc9b365f" class="outline-4">
+<h4 id="orgc9b365f"><span class="section-number-4">2.2.2</span> <a href="https://medium.com/machine-learning-101/chapter-2-svm-support-vector-machine-theory-f0812effc72">SVM Theory</a></h4>
+</div>
+<div id="outline-container-org956b476" class="outline-4">
+<h4 id="org956b476"><span class="section-number-4">2.2.3</span> <a href="https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/">SVM Theory 2</a></h4>
+</div>
+<div id="outline-container-orga7b53fb" class="outline-4">
+<h4 id="orga7b53fb"><span class="section-number-4">2.2.4</span> <a href="http://scikit-learn.org/stable/auto_examples/svm/plot_svm_regression.html#sphx-glr-auto-examples-svm-plot-svm-regression-py">Regression</a></h4>
+</div>
+<div id="outline-container-org4aa4cc7" class="outline-4">
+<h4 id="org4aa4cc7"><span class="section-number-4">2.2.5</span> <a href="https://martin-thoma.com/svm-with-sklearn/">More theory</a></h4>
+</div>
+</div>
+<div id="outline-container-org359d294" class="outline-3">
+<h3 id="org359d294"><span class="section-number-3">2.3</span> <a href="http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html#sphx-glr-auto-examples-cluster-plot-cluster-comparison-py">Clustering Comparison</a></h3>
+</div>
+<div id="outline-container-orga13a521" class="outline-3">
+<h3 id="orga13a521"><span class="section-number-3">2.4</span> <a href="https://blog.openai.com/generative-models/">Generative models</a></h3>
+</div>
+<div id="outline-container-org934c6ed" class="outline-3">
+<h3 id="org934c6ed"><span class="section-number-3">2.5</span> Multilabel classification</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Currently unsure if "multilabel" is the correct way to conveyr what we are wanting to do
+</p>
+</div>
+<div id="outline-container-org958ee81" class="outline-4">
+<h4 id="org958ee81"><span class="section-number-4">2.5.1</span> <a href="https://datascience.stackexchange.com/questions/28003/get-multiple-output-from-keras">Simple answer</a></h4>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc26a5ac" class="outline-2">
+<h2 id="orgc26a5ac"><span class="section-number-2">3</span> Other Interesting Data Sets:&#xa0;&#xa0;&#xa0;<span class="tag"><span class="data">data</span></span></h2>
+<div class="outline-text-2" id="text-3">
+<p>
+The following are Kaggle (or possibly other) datasets that are of interest for practice/training/excercise purposes:
+</p>
+</div>
+<div id="outline-container-org8ffbf16" class="outline-3">
+<h3 id="org8ffbf16"><span class="section-number-3">3.1</span> <a href="https://www.kaggle.com/c/pubg-finish-placement-prediction">Group Competition/Project: PUBG</a></h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org7112fec" class="outline-4">
+<h4 id="org7112fec"><span class="section-number-4">3.1.1</span> I propose using this dataset/competition as a group exercise/competition to increase understanding of ML</h4>
+</div>
+</div>
+<div id="outline-container-org3830c40" class="outline-3">
+<h3 id="org3830c40"><span class="section-number-3">3.2</span> <a href="https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009">Wine Quality</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="tutorial">tutorial</span></span></h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orge3f0e74" class="outline-4">
+<h4 id="orge3f0e74"><span class="section-number-4">3.2.1</span> <a href="https://medium.com/tensorflow/predicting-the-price-of-wine-with-the-keras-functional-api-and-tensorflow-a95d1c2c1b03">Tutorial</a></h4>
+</div>
+</div>
+<div id="outline-container-orgd226674" class="outline-3">
+<h3 id="orgd226674"><span class="section-number-3">3.3</span> <a href="https://www.kaggle.com/uciml/pima-indians-diabetes-database">Pima Indians Diabetes</a></h3>
+</div>
+<div id="outline-container-orgbb165f5" class="outline-3">
+<h3 id="orgbb165f5"><span class="section-number-3">3.4</span> <a href="https://www.kaggle.com/ncaa/ncaa-basketball">NCAA Basketball Super Dataset</a></h3>
+</div>
+<div id="outline-container-orgea44905" class="outline-3">
+<h3 id="orgea44905"><span class="section-number-3">3.5</span> <a href="https://www.kaggle.com/datagov/usa-names">USA Names</a></h3>
+</div>
+<div id="outline-container-org32f49f7" class="outline-3">
+<h3 id="org32f49f7"><span class="section-number-3">3.6</span> <a href="https://www.kaggle.com/zalando-research/fashionmnist">Fashion MNIST</a></h3>
+</div>
+<div id="outline-container-org482330b" class="outline-3">
+<h3 id="org482330b"><span class="section-number-3">3.7</span> <a href="https://www.kaggle.com/sportradar/baseball">2016 MLB Data</a></h3>
+</div>
+<div id="outline-container-orgd316ed3" class="outline-3">
+<h3 id="orgd316ed3"><span class="section-number-3">3.8</span> <a href="https://www.kaggle.com/open-powerlifting/powerlifting-database">Power Lifting</a></h3>
+</div>
+<div id="outline-container-org68d0864" class="outline-3">
+<h3 id="org68d0864"><span class="section-number-3">3.9</span> <a href="https://www.kaggle.com/jtrofe/beer-recipes">Brewer's Friend Recipes</a></h3>
+</div>
+<div id="outline-container-org5f9e2d0" class="outline-3">
+<h3 id="org5f9e2d0"><span class="section-number-3">3.10</span> <a href="https://www.kaggle.com/zaeemnalla/premier-league">EPL 2006/7 - 2017/8</a></h3>
+</div>
+<div id="outline-container-orgcd77d6c" class="outline-3">
+<h3 id="orgcd77d6c"><span class="section-number-3">3.11</span> <a href="https://www.kaggle.com/thefc17/epl-results-19932018">EPL 1993-2018</a></h3>
+<div class="outline-text-3" id="text-3-11">
+</div>
+<div id="outline-container-org93e67f1" class="outline-4">
+<h4 id="org93e67f1"><span class="section-number-4">3.11.1</span> The idea behind this would be to take as much input "stats" as possible in an attempt to predict expected outcome (perhaps as a percentage) so that, for a given week, you could put in such stats for a matchup and predict the winner, perhaps with an expected win probability</h4>
+<div class="outline-text-4" id="text-3-11-1">
+</div>
+<ol class="org-ol">
+<li><a id="org12cf0b7"></a>Would need to compare available data in dataset against available week to week data<br /></li>
+<li><a id="org36481e5"></a>How to handle record/winning percentage/etc. in a normalized fashi<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgb9bcedb" class="outline-3">
+<h3 id="orgb9bcedb"><span class="section-number-3">3.12</span> <a href="https://www.kaggle.com/sayangoswami/reddit-memes-dataset">Reddit Memes</a></h3>
+</div>
+<div id="outline-container-orgc3f9401" class="outline-3">
+<h3 id="orgc3f9401"><span class="section-number-3">3.13</span> <a href="https://www.kaggle.com/sulabhbista/frasier-dialogs">Fraiser Dialogs</a></h3>
+</div>
+<div id="outline-container-org0df8515" class="outline-3">
+<h3 id="org0df8515"><span class="section-number-3">3.14</span> Models:</h3>
+<div class="outline-text-3" id="text-3-14">
+</div>
+<div id="outline-container-org63c45c5" class="outline-4">
+<h4 id="org63c45c5"><span class="section-number-4">3.14.1</span> <a href="https://www.kaggle.com/keras/inceptionresnetv2">ResNetV2</a></h4>
+</div>
+<div id="outline-container-org3ebfb66" class="outline-4">
+<h4 id="org3ebfb66"><span class="section-number-4">3.14.2</span> <a href="https://www.kaggle.com/keras/resnet50">ResNet50</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Harper Eric S CTR USAF AFMC AFRL/RXAP</p>
+<p class="date">Created: 2018-10-10 Wed 16:40</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

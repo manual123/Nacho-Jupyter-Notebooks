@@ -1,0 +1,103 @@
+#+FILETAGS: :ML:
+* Tutorials:                                                       :tutorial:
+Here are a few examples and tutorials to get started/refresh your skills, starting with the "Hello, World!" of ML: the MNIST Handwritten digits:
+** MNIST Handwritten Digit:                                          :mnist:
+*** [[https://github.com/ksopyla/svm_mnist_digit_classification][Overview]]                                                  :information:
+*** [[http://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html][SVM Digit Classification]]                                 :notebook:svm:
+*** [[https://elitedatascience.com/keras-tutorial-deep-learning-in-python][Keras ANN]]                                    :notebook:information:ann:
+*** [[http://scikit-learn.org/stable/auto_examples/linear_model/plot_sparse_logistic_regression_mnist.html#sphx-glr-auto-examples-linear-model-plot-sparse-logistic-regression-mnist-py][Multinomail logist +L1]]                            :notebook:regression:
+*** [[http://neuralnetworksanddeeplearning.com/chap1.html][In-depth ANN/SVM]]                                          :information:
+*** [[https://medium.freecodecamp.org/how-to-classify-mnist-digits-with-different-neural-network-architectures-39c75a0f03e3][Simple with layer parameter adjusting]]                        :tutorial:
+** A few more examples using different datasets and methods:          :data:
+*** [[https://machinelearningmastery.com/multi-class-classification-tutorial-keras-deep-learning-library/][Keras Iris ANN]]
+*** [[https://machinelearningmastery.com/tutorial-first-neural-network-python-keras/][Pima Indians ANN]]                                                  :ANN:
+*** [[https://towardsdatascience.com/another-machine-learning-walk-through-and-a-challenge-8fae1e187a64][Taxi Example]]                                                 :notebook:
+**** [[https://github.com/WillKoehrsen/taxi-fare/blob/master/A%20Walkthrough%20and%20a%20Challenge.ipynb][link to notebook walkthrough]]
+*** [[https://towardsdatascience.com/a-data-science-for-good-machine-learning-project-walk-through-in-python-part-one-1977dd701dbc][Poverty Prediction]]
+*** [[https://towardsdatascience.com/a-complete-machine-learning-walk-through-in-python-part-one-c62152f39420][Energy Star Rating Prediction]]
+*** [[https://machinelearningmastery.com/regression-tutorial-keras-deep-learning-library-python/][Boston Housing Example]]                                       :notebook:
+**** [[https://www.kaggle.com/zoupet/neural-network-model-for-house-prices-tensorflow][Kaggle Data Link]]
+**** [[http://www.neural.cz/dataset-exploration-boston-house-pricing.html][Walkthrough]]
+*** [[http://scikit-learn.org/stable/tutorial/index.html][SKlearn tutorials]]
+*** [[http://scikit-learn.org/stable/auto_examples/applications/plot_face_recognition.html#sphx-glr-auto-examples-applications-plot-face-recognition-py][Eigenfaces/SVM Sklearn]]
+*** [[https://blog.keras.io/building-autoencoders-in-keras.html][Autoencoder]]                                               :information:
+*** Audio (for Matt):                                         :information:
+**** [[https://blog.manash.me/building-a-dead-simple-word-recognition-engine-using-convnet-in-keras-25e72c19c12b][Speech Recognition with Keras ConvNet]]
+**** [[https://medium.com/@franky07724_57962/what-i-learned-from-the-godfather-f2398c136372][Music Generation]]
+**** [[https://github.com/drscotthawley/audio-classifier-keras-cnn][Audio Classifier]]
+* Reference:                                                    :information:
+** Artificial Neural Networks
+*** [[https://towardsdatascience.com/stop-installing-tensorflow-using-pip-for-performance-sake-5854f9d9eb0c][Install Tensorflow with Conda, not pip]]
+*** [[https://towardsdatascience.com/a-gentle-introduction-to-neural-networks-series-part-1-2b90b87795bc][Brief Overview]]
+*** [[https://skymind.ai/wiki/neural-network][Deeper Overview]]
+*** [[https://towardsdatascience.com/a-gentle-introduction-to-neural-networks-series-part-1-2b90b87795bc][Gentle Introduction]]
+*** [[https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0][Activation Functions]]
+*** [[https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463][Network Cheat Sheets]]
+*** [[https://isaacchanghau.github.io/post/loss_functions/][Loss Functions]]
+*** Overfitting:
+**** [[https://en.wikipedia.org/wiki/Overfitting#Machine_learning][Wikipedia]]
+**** [[https://towardsdatascience.com/train-test-split-and-cross-validation-in-python-80b61beca4b6][Training/Testing/Cross-validation]]
+**** [[https://keras.rstudio.com/articles/training_visualization.html][Visualization of training history]]
+*** Convolutional Neural Nets:
+**** [[https://jacobgil.github.io/deeplearning/filter-visualizations][Visualizing CNN filters with keras]]
+**** [[https://blog.keras.io/how-convolutional-neural-networks-see-the-world.html][Keras walkthrough]]
+***** [[https://keras.io/getting-started/functional-api-guide/][Keras Functional API]]
+**** [[https://ai.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html][Google Deep Dream]]
+**** [[https://github.com/jacobgil/keras-filter-visualization][Github Keras Visualization]]
+**** [[http://machinelearninguru.com/computer_vision/basics/convolution/image_convolution_1.html]["Regular" Image Convolutions]]
+**** [[http://setosa.io/ev/image-kernels/]["Interactive image convolutions"]]
+**** [[https://www.kaggle.com/keras/resnet50/discussion][ResNet50]]
+*** Layer Visualization:
+**** [[https://github.com/raghakot/keras-vis][keras-vis]]
+***** [[https://raghakot.github.io/keras-vis/#getting-started][Documentation]]
+**** GET LINK FROM EXAMPLE
+*** Recurrent Neural Nets (RNNs)
+**** [[https://blog.keras.io/a-ten-minute-introduction-to-sequence-to-sequence-learning-in-keras.html][Ten minute intro]]
+***** [[https://github.com/keras-team/keras/blob/master/examples/addition_rnn.py][Code]]
+**** [[https://keras.io/layers/recurrent/][Keras Documentation]]
+**** [[http://adventuresinmachinelearning.com/recurrent-neural-networks-lstm-tutorial-tensorflow/][Tutorial]]
+***** [[http://adventuresinmachinelearning.com/keras-lstm-tutorial/][Keras Version]]
+**** [[https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/][Another example]]
+**** [[https://www.kaggle.com/nvhbk16k53/simple-rnn-with-keras][Simple Keras RNN]]
+**** [[https://towardsdatascience.com/understanding-lstm-and-its-quick-implementation-in-keras-for-sentiment-analysis-af410fd85b47][Quick Keras Implementation]]
+**** [[https://github.com/martin-gorner/tensorflow-rnn-shakespeare][Shakespeare]]
+**** [[http://karpathy.github.io/2015/05/21/rnn-effectiveness/][Overview article]]
+**** [[https://docs.google.com/presentation/d/e/2PACX-1vRouwj_3cYsmLrNNI3Uq5gv5-hYp_QFdeoan2GlxKgIZRSejozruAbVV0IMXBoPsINB7Jw92vJo2EAM/pub#slide=id.p][Slides]]
+** Support Vector Machines
+*** [[https://en.wikipedia.org/wiki/Support_vector_machine][Wikipedia]]
+*** [[https://medium.com/machine-learning-101/chapter-2-svm-support-vector-machine-theory-f0812effc72][SVM Theory]]
+*** [[https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/][SVM Theory 2]]
+*** [[http://scikit-learn.org/stable/auto_examples/svm/plot_svm_regression.html#sphx-glr-auto-examples-svm-plot-svm-regression-py][Regression]]
+*** [[https://martin-thoma.com/svm-with-sklearn/][More theory]]
+** [[http://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html#sphx-glr-auto-examples-cluster-plot-cluster-comparison-py][Clustering Comparison]]
+** [[https://blog.openai.com/generative-models/][Generative models]]
+** Multilabel classification
+Currently unsure if "multilabel" is the correct way to conveyr what we are wanting to do
+*** [[https://datascience.stackexchange.com/questions/28003/get-multiple-output-from-keras][Simple answer]]
+*** [[http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/][Facial Keypoints]]
+**** Should be useful as an example of regression of mulitple quantities
+*** [[https://www.pyimagesearch.com/2018/05/07/multi-label-classification-with-keras/][Multilabel Classification of clothes]]
+*** [[https://www.pyimagesearch.com/2018/06/04/keras-multiple-outputs-and-multiple-losses/][Multiple output classification of clothes]]
+* Other Interesting Data Sets:                                         :data:
+The following are Kaggle (or possibly other) datasets that are of interest for practice/training/excercise purposes:
+** [[https://www.kaggle.com/c/pubg-finish-placement-prediction][Group Competition/Project: PUBG]]
+*** I propose using this dataset/competition as a group exercise/competition to increase understanding of ML
+** [[https://www.kaggle.com/uciml/red-wine-quality-cortez-et-al-2009][Wine Quality]]                                                   :tutorial:
+*** [[https://medium.com/tensorflow/predicting-the-price-of-wine-with-the-keras-functional-api-and-tensorflow-a95d1c2c1b03][Tutorial]]
+** [[https://www.kaggle.com/uciml/pima-indians-diabetes-database][Pima Indians Diabetes]]
+** [[https://www.kaggle.com/ncaa/ncaa-basketball][NCAA Basketball Super Dataset]]
+** [[https://www.kaggle.com/datagov/usa-names][USA Names]]
+** [[https://www.kaggle.com/zalando-research/fashionmnist][Fashion MNIST]]
+** [[https://www.kaggle.com/sportradar/baseball][2016 MLB Data]]
+** [[https://www.kaggle.com/open-powerlifting/powerlifting-database][Power Lifting]]
+** [[https://www.kaggle.com/jtrofe/beer-recipes][Brewer's Friend Recipes]]
+** [[https://www.kaggle.com/zaeemnalla/premier-league][EPL 2006/7 - 2017/8]]
+** [[https://www.kaggle.com/thefc17/epl-results-19932018][EPL 1993-2018]]
+*** The idea behind this would be to take as much input "stats" as possible in an attempt to predict expected outcome (perhaps as a percentage) so that, for a given week, you could put in such stats for a matchup and predict the winner, perhaps with an expected win probability
+**** Would need to compare available data in dataset against available week to week data
+**** How to handle record/winning percentage/etc. in a normalized fashi
+** [[https://www.kaggle.com/sayangoswami/reddit-memes-dataset][Reddit Memes]]
+** [[https://www.kaggle.com/sulabhbista/frasier-dialogs][Fraiser Dialogs]]
+** Models:
+*** [[https://www.kaggle.com/keras/inceptionresnetv2][ResNetV2]]
+*** [[https://www.kaggle.com/keras/resnet50][ResNet50]]

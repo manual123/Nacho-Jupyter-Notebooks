@@ -1,0 +1,11 @@
+# Activate environment first
+
+# From Source
+install.packages(c('crayon', 'pbdZMQ', 'devtools'))
+devtools::install_github(paste0('IRkernel/', c('repr', 'IRdisplay', 'IRkernel')))
+IRkernel::installspec()
+
+# From Binary Package
+install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'))
+devtools::install_github('IRkernel/IRkernel')
+IRkernel::installspec()

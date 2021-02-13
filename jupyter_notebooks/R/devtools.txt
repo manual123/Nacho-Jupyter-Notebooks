@@ -1,0 +1,5 @@
+# make sure unzip command is available:
+options(unzip="unzip")
+
+library(devtools)
+install_github("user/repo")
